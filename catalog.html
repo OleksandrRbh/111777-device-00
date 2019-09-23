@@ -5,7 +5,151 @@
     <title></title>
   </head>
   <body>
-    
-
+    <header>
+  		<nav>
+  			<a>
+  				<h1 class="hidden">Магазин гаджетов Device</h1>
+  				<a href="index.html"><img src="img/index-logo.svg" width="163" height="35" alt="Логотип магазина Device"></a>
+  			</a>
+  			<div class="user-block">
+  				<form class="goods-search" action="" method="get">
+  					<label for="search-field-id">Поиск по сайту</label>
+  					<input type="text" name="search-field" id="search-field-id" placeholder="Поиск по сайту">
+  					<input type="submit" value="Искать">	
+  				</form>
+  				<a class="account-name" href="">Валентин Петухов</a>
+  				<a class="sign-in" href="">Войти</a>
+  				<a class="compare" href="">Сравнить</a>
+  				<a class="cart" href="">Корзина</a>
+  			</div>
+  			<ul>
+  				<li><a href="catalog.html">Каталог товаров</a></li>
+  				<li><a href="delivery.html">Доставка</a></li>
+  				<li><a href="warranty.html">Гарантия</a></li>
+  				<li><a href="contacts.html">Контакты</a></li>
+  			</ul>
+  		</nav>		
+  	</header>
+  	<main>
+  		<h1>Моноподы для селфи</h1>
+  		<ul>
+  			<li><a href="index.html">Главная</a></li>
+  			<li><a href="catalog.html">Каталог товаров</a></li>
+  			<li>Моноподы для селфи</li>
+  		</ul>
+  		<section>
+  			<div class="top-bar">
+  				<h2>Фильтр:</h2>
+  			</div>
+  			<form method="get" action="">
+  				<h3>Стоимость</h3>
+  				<h3>Цвет</h3>
+  					<input type="checkbox" name="color-black" id="color-black-id" checked>
+  					<label for="color-black-id">Черный</label>
+  					<input type="checkbox" name="color-white" id="color-white-id">
+  					<label for="color-white-id">Белый</label>
+  					<input type="checkbox" name="color-blue" id="color-blue-id" checked>
+  					<label for="color-blue-id">Синий</label>
+  					<input type="checkbox" name="color-red" id="color-red-id" checked>
+  					<label for="color-red-id">Красный</label>
+  					<input type="checkbox" name="color-pink" id="color-pink-id">
+  					<label for="color-pink-id">Розовый</label>  				
+  				<h3>Bluetooth</h3>
+  					<input type="radio" name="bluetooth-switch" id="radio-yes-id" checked>
+  					<label for="radio-yes-id">Есть</label>
+  					<input type="radio" name="bluetooth-switch" id="radio-no-id">
+  					<label for="radio-no-id">Нет</label>
+  				<input type="button" name="filter-button" value="Показать">
+  			</form>	
+  		</section>
+  		<section>
+  			<div class="top-bar">
+  				<h2>Сортировка:</h2>
+  				<ul>
+  					<li><a href="#">По цене</a></li>
+  					<li><a href="#">По типу</a></li>
+  					<li><a href="#">По популярности</a></li>
+  				</ul>
+  				<ul>
+  					<li><a href="#">Вверх</a></li>
+  					<li><a href="#">Вниз</a></li>
+  				</ul>
+  			</div>
+  			<h2 class="hidden">Список товаров</h2>
+  			<ul>
+  				<li>  					
+  					<h3><a href="#">Любительская селфи-палка</a></h3>
+  					<span>500 руб.</span>
+  					<div>
+  						<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+  						<input type="button" name="good-card-button" value="В корзину">
+  						<a href="#">Добавить к сравнению</a>
+  					</div>
+  				</li>
+  				<li>  					
+  					<h3><a href="#">Професиональная селфи-палка</a></h3>
+  					<span>1500 руб.</span>
+  					<div>
+  						<img src="img/item-2.jpg" width="360" height="380" alt="Професиональная селфи-палка">
+  						<input type="button" name="good-card-button" value="В корзину">
+  						<a href="#">Добавить к сравнению</a>
+  					</div>
+  				</li>
+  				<li>  					
+  					<h3><a href="#">Непотопяемая селфи-палка</a></h3>
+  					<span>2500 руб.</span>
+  					<div>
+  						<img src="img/item-3.jpg" width="360" height="380" alt="Непотопяемая селфи-палка">
+  						<input type="button" name="good-card-button" value="В корзину">
+  						<a href="#">Добавить к сравнению</a>
+  					</div>
+  				</li>
+  				<li>  					
+  					<h3><a href="#">Селфи-палка &laquo;Следуй за мной&raquo; </a></h3>
+  					<span>4900 руб.</span>
+  					<div>
+  						<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+  						<input type="button" name="good-card-button" value="В корзину">
+  						<a href="#">Добавить к сравнению</a>
+  					</div>
+  				</li>
+  			</ul>
+  			<div class="pagination">
+  				<a href=""><span>Назад</span></a>
+  				<ul>
+          	<li><a>1</a></li>
+          	<li><a href="#">2</a></li>
+          	<li><a href="#">3</a></li>
+        	</ul>
+        	<a href=""><span>Вперед</span></a>
+  			</div>
+  		</section>		
+  	</main>
+  	<footer>
+  		<div class="footer-column left-foot-col">
+        <img src="img/device-logo-footer.svg" width="163" height="35" alt="Логотип магазина Device">
+        <p>г. Москва, ул. Строителей, 15</p>    
+      </div>
+      <div class="footer-column center-foot-col">
+        <ul>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Фейсбук</a></li>
+          <li><a href="#">Инстаграм</a></li>
+          <li><a href="#">Твиттер</a></li>
+        </ul>     
+      </div>
+      <div class="footer-column right-foot-col">
+      	<a class="account-name" href="">Валентин Петухов</a>
+        <a class="sign-in" href="">Войти</a>
+        <a class="compare" href="">Сравнить</a>
+        <a class="cart" href="">Корзина</a>
+        <p>Тел.: +7 (495) 495-95-95</p>
+        <img src="img/logo-html-yellow.svg" width="27" height="35" alt="Логотип HTML-академии">      
+      </div>
+  	</footer>
   </body>
 </html>
