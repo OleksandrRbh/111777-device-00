@@ -156,7 +156,9 @@
     		<div class="contacts">
     		  <h3>Контакты</h3>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <div class="map"></div>
+            <div class="map">
+              <img src="img/map.png" alt="Офис Device находится по адресу: улица Строителей 15, Санкт-Петербург">
+            </div>
     		</div>	
     	</section>
     </main>
@@ -179,9 +181,9 @@
       </div>
       <div>
         <ul>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
-          <li><a href="#">Твиттер</a></li>
+          <li><a href="#" aria-label="Наша страница в Фейсбук">Фейсбук</a></li>
+          <li><a href="#" aria-label="Наша страница в Инстаграм">Инстаграм</a></li>
+          <li><a href="#" aria-label="Наша страница в Твиттер">Твиттер</a></li>
         </ul>
         <a href="https://htmlacademy.ru">HTML Academy</a>
       </div>
@@ -203,19 +205,25 @@
     <section class="write-us-popup">
       <h2 class="visibility-hidden">Написать нам</h2>
       <form method="get" action="">
-        <label for="name-field-id">Ваше имя:</label>
-        <input type="text" name="name-field" id="name-field-id" placeholder="Имя Фамилия">      
-        <label for="email-field-id">Ваш e-mail:</label>
-        <input type="text" name="email-field" id="email-field-id" placeholder="email@example.com">      
-        <label for="letter-field-id">Текст письма:</label>
-        <textarea type="text" name="letter-field" id="letter-field-id" rows="6" cols="60" placeholder="В свободной форме"></textarea>
+        <p>
+          <label for="name-field-id">Ваше имя:</label>
+          <input type="text" name="name-field" id="name-field-id" placeholder="Имя Фамилия"> 
+        </p>
+        <p>
+          <label for="email-field-id">Ваш e-mail:</label>
+          <input type="text" name="email-field" id="email-field-id" placeholder="email@example.com">  
+        </p>
+        <p>
+          <label for="letter-field-id">Текст письма:</label>
+          <textarea type="text" name="letter-field" id="letter-field-id" rows="6" cols="60" placeholder="В свободной форме"></textarea>
+        </p>  
         <input type="button" name="send-button" value="Отправить">
       </form>
       <button type="button">Закрыть</button>
     </section>
     <section class="map-popup">
       <h2 class="visibility-hidden">Карта</h2>
-      <button type="button">Закрыть</button>
+      <button type="button" aria-label="Закрыть карту"><img src="img/modal-close.png"></button>
     </section>
   </body>
 </html>

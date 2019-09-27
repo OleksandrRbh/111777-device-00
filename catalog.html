@@ -41,24 +41,48 @@
   				<span>Фильтр:</span>
   			</div>
   			<form method="get" action="">
-  				<span>Стоимость</span>
-  				<span>Цвет</span>
-  					<input type="checkbox" name="color-black" id="color-black-id" checked>
-  					<label for="color-black-id">Черный</label>
-  					<input type="checkbox" name="color-white" id="color-white-id">
-  					<label for="color-white-id">Белый</label>
-  					<input type="checkbox" name="color-blue" id="color-blue-id" checked>
-  					<label for="color-blue-id">Синий</label>
-  					<input type="checkbox" name="color-red" id="color-red-id" checked>
-  					<label for="color-red-id">Красный</label>
-  					<input type="checkbox" name="color-pink" id="color-pink-id">
-  					<label for="color-pink-id">Розовый</label>  				
-  				<span>Bluetooth</span>
-  					<input type="radio" name="bluetooth-switch" id="radio-yes-id" checked>
-  					<label for="radio-yes-id">Есть</label>
-  					<input type="radio" name="bluetooth-switch" id="radio-no-id">
-  					<label for="radio-no-id">Нет</label>
-  				<input type="button" name="filter-button" value="Показать">
+          <fieldset>
+  				  <legend>Стоимость</legend>
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+      					<input type="checkbox" name="color-black" id="color-black-id" checked>
+      					<label for="color-black-id">Черный</label>
+              </li>
+              <li>
+      					<input type="checkbox" name="color-white" id="color-white-id">
+      					<label for="color-white-id">Белый</label>
+              </li>
+              <li>
+      					<input type="checkbox" name="color-blue" id="color-blue-id" checked>
+      					<label for="color-blue-id">Синий</label>
+              </li>
+              <li>
+      					<input type="checkbox" name="color-red" id="color-red-id" checked>
+      					<label for="color-red-id">Красный</label>
+              </li>
+              <li>
+      					<input type="checkbox" name="color-pink" id="color-pink-id">
+      					<label for="color-pink-id">Розовый</label> 
+              </li>
+            </ul>
+          </fieldset> 
+          <fieldset>
+          <legend>Bluetooth</legend>
+            <ul>    
+              <li>
+      					<input type="radio" name="bluetooth-switch" id="radio-yes-id" checked>
+      					<label for="radio-yes-id">Есть</label>
+              </li>
+              <li>
+      					<input type="radio" name="bluetooth-switch" id="radio-no-id">
+      					<label for="radio-no-id">Нет</label>
+              </li>
+            </ul>
+          </fieldset> 
+  				<button type="submit" name="filter-button" value="Показать"></button>
   			</form>	
   		</section>
   		<section>
@@ -151,11 +175,11 @@
       </div>
       <div>
         <ul>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
-          <li><a href="#">Твиттер</a></li>
+          <li><a href="#" aria-label="Наша страница в Фейсбук">Фейсбук</a></li>
+          <li><a href="#" aria-label="Наша страница в Инстаграм">Инстаграм</a></li>
+          <li><a href="#" aria-label="Наша страница в Твиттер">Твиттер</a></li>
         </ul>
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+        <a href="https://htmlacademy.ru" aria-label="Перейти на сайт HTML Academy">HTML Academy</a>
       </div>
     </footer>
   </body>
