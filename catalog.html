@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Device/Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header>
-  		<nav>
+  		<nav  class="main-navigation">
   			<a href="index.html">
   				<h1 class="visibility-hidden">Магазин гаджетов Device</h1>
-  				<img src="img/index-logo.svg" width="163" height="35" alt="Логотип магазина Device">
+  				<img class="index-logo" src="img/index-logo.svg" width="163" height="35" alt="Логотип магазина Device">
   			</a>
   			<div class="user-block">
   				<form class="goods-search" action="" method="get">
-  					<label for="search">Поиск по сайту</label>
+  					<label for="search" class="visibility-hidden">Поиск по сайту</label>
   					<input type="text" name="search" id="search" placeholder="Поиск по сайту">
   				</form>
   				<a class="account-name" href="">Валентин Петухов</a>
@@ -21,8 +24,8 @@
   				<a class="compare" href="">Сравнить</a>
   				<a class="cart" href="">Корзина</a>
   			</div>
-  			<ul>
-  				<li><a href="catalog.html">Каталог товаров</a></li>
+  			<ul class="user-list">
+  				<li><a href="catalog.html" class="catalog-open">Каталог товаров</a></li>
   				<li><a href="delivery.html">Доставка</a></li>
   				<li><a href="warranty.html">Гарантия</a></li>
   				<li><a href="contacts.html">Контакты</a></li>
@@ -31,7 +34,7 @@
   	</header>
   	<main>
   		<h1>Моноподы для селфи</h1>
-  		<ul>
+  		<ul class="breadcrumbs">
   			<li><a href="index.html">Главная</a></li>
   			<li><a href="catalog.html">Каталог товаров</a></li>
   			<li><a>Моноподы для селфи</a></li>
@@ -157,14 +160,14 @@
   		</section>		
   	</main>
   	<footer>
-      <div class="user-block">
-        <img src="img/device-logo-footer.svg" width="163" height="35" alt="Логотип магазина Device">
-        <a class="account-name" href="">Валентин Петухов</a>
-        <a class="sign-in" href="">Войти</a>
-        <a class="compare" href="">Сравнить</a>
-        <a class="cart" href="">Корзина</a>
+      <div class="footer-user-block">
+        <a href="index.html"><img src="img/device-logo-footer.svg" width="163" height="35" alt="Логотип магазина Device"></a> 
+        <a class="account-name" href="">Валентин Петухов</a>       
+        <a class="user-link sign-in" href=""><span>Войти</span></a>
+        <a class="user-link compare" href=""><span>Сравнить</span></a>
+        <a class="user-link cart" href=""><span>Корзина</span></a>
       </div>
-      <div>
+      <div class="footer-contacts">
         <p>г. Москва, ул. Строителей, 15</p>
         <ul>
           <li><a href="delivery.html">Доставка</a></li>
@@ -173,13 +176,13 @@
         </ul>
         <p>Тел.: +7 (495) 495-95-95</p>
       </div>
-      <div>
+      <div class="footer-social">
         <ul>
-          <li><a href="#" aria-label="Наша страница в Фейсбук">Фейсбук</a></li>
-          <li><a href="#" aria-label="Наша страница в Инстаграм">Инстаграм</a></li>
-          <li><a href="#" aria-label="Наша страница в Твиттер">Твиттер</a></li>
+          <li><a href="#" class="social-link fb" aria-label="Наша страница в Фейсбук"></a></li>
+          <li><a href="#" class="social-link inst" aria-label="Наша страница в Инстаграм"></a></li>
+          <li><a href="#" class="social-link twit" aria-label="Наша страница в Твиттер"></a></li>
         </ul>
-        <a href="https://htmlacademy.ru" aria-label="Перейти на сайт HTML Academy">HTML Academy</a>
+        <a href="https://htmlacademy.ru" class="developed-by" aria-label="Сайт HTML Academy"></a>
       </div>
     </footer>
   </body>
