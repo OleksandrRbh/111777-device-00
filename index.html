@@ -9,32 +9,54 @@
   </head>
   <body>
     <header>
-  		<nav class="main-navigation">
-        <a>
-      		<h1 class="visibility-hidden">Магазин гаджетов Device</h1>
-      		<img class="index-logo" src="img/index-logo.svg" width="163" height="35" alt="Логотип магазина Device">
-      	</a>
-  			<div class="user-block">
-  				<form class="goods-search" action="" method="get">
-  					<label for="search" class="visibility-hidden">Поиск по сайту</label>
-  					<input type="text" name="search" id="search" placeholder="Поиск по сайту">
-            <button type="button">Найти</button>	
-  				</form>
-  				<a class="user-item sign-in" href="">Войти</a>
-  				<a class="user-item compare" href="">Сравнить</a>
-  				<a class="user-item cart" href="">Корзина</a>
-  			</div>
-  			<ul>
-  				<li><a href="catalog.html" class="catalog-open">Каталог товаров</a></li>
-  				<li><a href="delivery.html">Доставка</a></li>
-  				<li><a href="warranty.html">Гарантия</a></li>
-  				<li><a href="contacts.html">Контакты</a></li>
-  			</ul>
-  		</nav>		
+      <div class="container">
+    		<nav class="main-navigation">
+          <a class="index-logo-wrapper">
+        		<h1 class="visually-hidden">Магазин гаджетов Device</h1>
+        		<img class="index-logo" src="img/index-logo.svg" width="163" height="35" alt="Логотип магазина Device">
+        	</a>
+    			<div class="user-block">
+    				<form class="goods-search" action="" method="get">
+    					<label for="search" class="visually-hidden">Поиск по сайту</label>
+    					<input type="text" name="search" id="search" placeholder="Поиск по сайту">
+              <button type="button">Найти</button>	
+    				</form>
+            <div class="user-item-wrapper">
+      				<a class="user-item sign-in" href="">Войти</a>
+      				<a class="user-item compare" href="">Сравнить</a>
+      				<a class="user-item cart" href="">Корзина</a>
+            </div>
+    			</div>
+    			<ul class="main-menu">
+    				<li class="catalog-open-wrapper">
+              <a href="catalog.html" class="catalog-open">Каталог товаров</a>
+              <section class="categories-popup">
+                <ul>
+                  <li><a href="">Виртуальная реальность</a></li>
+                  <li><a href="">Моноподы для селфи</a></li>
+                  <li><a href="">Экшн-камеры</a></li>
+                </ul>  
+                <ul>
+                  <li><a href="">Фитнес-браслеты</a></li>
+                  <li><a href="">Умные часы</a></li>
+                </ul>
+                <ul>
+                  <li><a href="">Квадрокоптеры</a></li>
+                </ul>
+              </section>
+            </li>
+    				<li class="service-items-wrapper">
+              <a href="delivery.html">Доставка</a>
+    				  <a href="warranty.html">Гарантия</a>
+    				  <a href="contacts.html">Контакты</a>
+            </li>
+    			</ul>
+    		</nav>		
+      </div>
   	</header>
     <main>
     	<section class="main-slider">
-    		<h2 class="visibility-hidden">Новинки</h2>
+    		<h2 class="visually-hidden">Новинки</h2>
     		<div class="slider-1">
     			<div class="slider-image">
     				<img src="img/slider-1.png" width="384px" height="486" alt="Селфи-палка">
@@ -99,7 +121,7 @@
     		</div>
     	</section>
     	<section class="main-popular">
-    		<h2 class="visibility-hidden">Популярные товары</h2>
+    		<h2 class="visually-hidden">Популярные товары</h2>
     		<ul class="popular-items">
     			<li>
             <a href="#">
@@ -137,7 +159,7 @@
         <input type="radio" name="service-slide-radio" id="delivery-item-id" checked>
         <input type="radio" name="service-slide-radio" id="warranty-item-id">
         <input type="radio" name="service-slide-radio" id="credit-item-id">
-    		<h2 class="visibility-hidden">Условия доставки</h2>
+    		<h2 class="visually-hidden">Условия доставки</h2>
     		<div class="services-switch-box">
           <ul>
     			 <li><label class="delivery-item" for="delivery-item-id">Доставка</label></li>
@@ -161,7 +183,7 @@
         </div>
     	</section>
     	<section class="main-producers">
-    		<h2 class="visibility-hidden">Производители</h2>
+    		<h2 class="visually-hidden">Производители</h2>
     		<ul>
     			<li><img src="img/prodlogo-1gray.jpg" width="260" height="100" alt="Логотип DJI"></li>
     			<li><img src="img/prodlogo-2gray.jpg" width="260" height="100" alt="Логотип SP Gadgets"></li>
@@ -170,7 +192,7 @@
     		</ul>	
     	</section>
     	<div class="main-info">
-        <h2 class="visibility-hidden">Главная информация</h2>
+        <h2 class="visually-hidden">Главная информация</h2>
     		<section class="about-us">
     		  <h3>О нас</h3>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -222,23 +244,10 @@
       </div>
     </footer>
 
-    <section class="categories-popup">
-      <ul>
-        <li><a href="">Виртуальная реальность</a></li>
-        <li><a href="">Моноподы для селфи</a></li>
-        <li><a href="">Экшн-камеры</a></li>
-      </ul>  
-      <ul>
-        <li><a href="">Фитнес-браслеты</a></li>
-        <li><a href="">Умные часы</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Квадрокоптеры</a></li>
-      </ul>
-    </section>
+    
 
     <section class="write-us-popup">
-      <h2 class="visibility-hidden">Написать нам</h2>
+      <h2 class="visually-hidden">Написать нам</h2>
       <form method="get" action="">
         <p>
           <label for="name-field-id">Ваше имя:</label>
@@ -258,7 +267,7 @@
     </section>
 
     <section class="map-popup">
-      <h2 class="visibility-hidden">Карта</h2>
+      <h2 class="visually-hidden">Карта</h2>
       <button class="modal-close-btn" type="button" aria-label="Закрыть карту"><img src="img/modal-close.png"></button>
     </section>
   </body>

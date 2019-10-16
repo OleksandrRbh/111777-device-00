@@ -9,29 +9,52 @@
   </head>
   <body>
     <header>
-  		<nav  class="main-navigation">
-  			<a href="index.html">
-  				<h1 class="visibility-hidden">Магазин гаджетов Device</h1>
-  				<img class="index-logo" src="img/index-logo.svg" width="163" height="35" alt="Логотип магазина Device">
-  			</a>
-  			<div class="user-block">
-  				<form class="goods-search" action="" method="get">
-  					<label for="search" class="visibility-hidden">Поиск по сайту</label>
-  					<input type="text" name="search" id="search" placeholder="Поиск по сайту">
-  				</form>
-  				<a class="account-name" href="">Валентин Петухов</a>
-  				<a class="sign-in" href="">Войти</a>
-  				<a class="compare" href="">Сравнить</a>
-  				<a class="cart" href="">Корзина</a>
-  			</div>
-  			<ul class="user-list">
-  				<li><a href="catalog.html" class="catalog-open">Каталог товаров</a></li>
-  				<li><a href="delivery.html">Доставка</a></li>
-  				<li><a href="warranty.html">Гарантия</a></li>
-  				<li><a href="contacts.html">Контакты</a></li>
-  			</ul>
-  		</nav>		
-  	</header>
+      <div class="container">
+        <nav class="main-navigation main-navigation-catalog">
+          <a class="index-logo-wrapper" href="index.html">
+            <h1 class="visually-hidden">Магазин гаджетов Device</h1>
+            <img class="index-logo" src="img/index-logo.svg" width="163" height="35" alt="Логотип магазина Device">
+          </a>
+          <div class="user-block">
+            <form class="goods-search" action="" method="get">
+              <label for="search" class="visually-hidden">Поиск по сайту</label>
+              <input type="text" name="search" id="search" placeholder="Поиск по сайту">
+              <button type="button">Найти</button>  
+            </form>
+            <div class="user-item-wrapper">
+              <a class="user-item sign-in" href="">Валентин Петухов</a>
+              <a class="user-item exit" href="">Выйти</a>
+              <a class="user-item compare" href="">Сравнить</a>
+              <a class="user-item cart" href="">Корзина</a>
+            </div>
+          </div>
+          <ul class="main-menu">
+            <li class="catalog-open-wrapper">
+              <a href="catalog.html" class="catalog-open">Каталог товаров</a>
+              <section class="categories-popup">
+                <ul>
+                  <li><a href="">Виртуальная реальность</a></li>
+                  <li><a href="">Моноподы для селфи</a></li>
+                  <li><a href="">Экшн-камеры</a></li>
+                </ul>  
+                <ul>
+                  <li><a href="">Фитнес-браслеты</a></li>
+                  <li><a href="">Умные часы</a></li>
+                </ul>
+                <ul>
+                  <li><a href="">Квадрокоптеры</a></li>
+                </ul>
+              </section>
+            </li>
+            <li class="service-items-wrapper">
+              <a href="delivery.html">Доставка</a>
+              <a href="warranty.html">Гарантия</a>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>    
+      </div>
+    </header>
   	<main>
   		<h1>Моноподы для селфи</h1>
   		<ul class="breadcrumbs">
@@ -127,7 +150,7 @@
             </li>
   				</ul>
   			</div>
-  			<span class="visibility-hidden">Список товаров</span>
+  			<span class="visually-hidden">Список товаров</span>
   			<ul class="goods-list">
   				<li>
   					<div class="item-container">
