@@ -278,12 +278,128 @@ header {
 	justify-content: space-between;
 }
 
+.main-slider {
+	position: relative;
+	min-height: 481px;
+}
+
+.main-slider .main-slider-item {
+	position: absolute;
+	top: -160px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	display: none;
+	box-sizing: border-box;
+}
+
+.main-slider input {
+	display: none;
+}
+
+.main-slider .label-box {
+	position: absolute;
+	right: 70px;
+	top: 222px;
+	width: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 3;
+}
+
+.main-slider label {
+	background-image: url(../img/slider-button-empty.png); 
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 12px;
+	height: 12px;
+}
+
+.main-slider .main-slider-switch-1:checked ~ .label-box label:nth-child(1){
+	background-image: url(../img/slider-button.png);
+}
+.main-slider .main-slider-switch-2:checked ~ .label-box label:nth-child(2){
+	background-image: url(../img/slider-button.png);
+}
+.main-slider .main-slider-switch-3:checked ~ .label-box label:nth-child(3){
+	background-image: url(../img/slider-button.png);
+}
+
+.main-slider .main-slider-switch-1:checked ~ .slider-1 {
+	display: flex;
+}
+.main-slider .main-slider-switch-2:checked ~ .slider-2 {
+	display: flex;
+}
+.main-slider .main-slider-switch-3:checked ~ .slider-3 {
+	display: flex;
+}
+
+.slider-image {
+	width: 580px;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.slider-description {
+	position: relative;
+	width: 580px;
+	box-sizing: border-box;
+	padding-top: 126px;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	padding-right: 68px; 
+	display: flex;
+	flex-direction: column;
+}
+
+ .main-slider-item .slider-description::before {
+	position: absolute;
+	content: "";
+	width: 100px;
+	height: 7px;
+	background-color: #ffffff;
+	top: 86px;
+	left: 20px;
+}
+
+.main-slider-item .slider-description::after {
+	position: absolute;
+	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+  font-size: 180px;
+  font-weight: 800;
+  color: #ffffff;
+	top: 106px;
+	right: 50px;
+}
+
+.slider-1 .slider-description::after {
+	content: "01";
+}
+
+.slider-2 .slider-description::after {
+	content: "02";
+}
+
+.slider-3 .slider-description::after {
+	content: "03";
+}
+
 .main-slider .action-call {
 	font-family: "Gilroy-Extrabold", Arial, sans-serif;
   font-size: 47px;
   line-height: 56px;
   font-weight: 800;
   color: #000000;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.slider-description p {
+	margin-bottom: 45px;
 }
 
 .slider-description a {
@@ -296,6 +412,8 @@ header {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 4px;
+  margin-bottom: 45px;
+  align-self: flex-start;
   }
 
 .parameters tr:first-of-type {
@@ -342,10 +460,17 @@ header {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.main-popular {
+	margin-bottom: 180px;
+}
+
 .popular-items {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .popular-items li{
@@ -434,6 +559,25 @@ li:nth-of-type(6) .popular-item::after {
 	opacity: 0.3;
 }
 
+.main-services {
+	min-height: 288px;
+	background-color: #e5e5e5;
+	z-index: -3;
+}
+
+.main-services-container {
+	position: relative;
+}
+
+.main-services .main-services-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	position: absolute;
+	top: -102px;
+	z-index: 2;
+}
+
 .services-switch-box{
 	width: 280px;
 	height: 260px;
@@ -496,13 +640,49 @@ li:nth-of-type(6) .popular-item::after {
 	display: none;
 }
 
+.services-sliders {
+	flex-grow: 1;
+	display: flex;
+}
+
+.services-sliders-item {
+	box-sizing: border-box;
+	width: 876px;
+	padding-left: 116px;
+	position: relative;
+	flex-grow: 1;
+}
+
+.services-sliders-item::after {
+	position: absolute;
+	content: "";
+	width: 272px;
+	height: 319px;
+	right: 0px;
+	top: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.services-slider-1::after {
+	background-image: url(../img/services-delivery.png);
+}
+
+.services-slider-2::after {
+	background-image: url(../img/services-warranty.png);
+}
+
+.services-slider-3::after {
+	background-image: url(../img/services-credit.png);
+}
+
 .services-sliders h3 {
 	font-family: "Gilroy-Extrabold", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 800;
   color: #000000;
-  margin-top: 80px;
+  margin-top: 74px;
   margin-bottom: 32px; 	
 }
 
@@ -556,6 +736,11 @@ li:nth-of-type(6) .popular-item::after {
 .main-producers ul {
 	list-style: none;
 	padding: 0;
+	height: 287px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .main-producers li {
@@ -586,6 +771,12 @@ li:nth-of-type(6) .popular-item::after {
 
 .main-producers li:nth-child(4):hover::before{
 	background-image: url(../img/prodlogo-4color.jpg);
+}
+
+.main-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .main-info h3 {
@@ -623,6 +814,7 @@ li:nth-of-type(6) .popular-item::after {
   line-height: 40px;
   font-weight: 800;
   color: #000000;
+  margin-top: 28px;
   margin-bottom: 0px; 
 }
 
@@ -715,6 +907,18 @@ footer ul {
 	margin: 0px;
 }
 
+.footer-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footer-wrapper .footer-user-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 footer .footer-user-block img:hover {
 	opacity: 0.6;
 }
@@ -726,6 +930,7 @@ footer .footer-user-block img:active {
 .footer-user-block .user-link {
 	position: relative;
 	padding-left: 26px;
+	margin-left: 43px;
 }
 
 .footer-user-block .user-link::before{
@@ -771,6 +976,12 @@ footer .footer-user-block img:active {
 	opacity: 0.3;
 }
 
+.footer-contacts {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 .footer-contacts ul {
 	font-family: "Gilroy-Extrabold", Arial, sans-serif;
   font-size: 18px;
@@ -778,6 +989,10 @@ footer .footer-user-block img:active {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 3px;	
+  display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .footer-contacts a:hover {
