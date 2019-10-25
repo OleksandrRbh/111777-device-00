@@ -33,7 +33,7 @@ close.addEventListener("click", function (evt) {
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
     overlay.classList.remove("overlay-show");
-  });
+});
 
 form.addEventListener("submit", function (evt) {    
     if(!nickName.value || !email.value || !message.value) {
@@ -46,7 +46,7 @@ form.addEventListener("submit", function (evt) {
     		localStorage.setItem("nickName", nickName.value);
     		}
     	}
-  });
+});
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
@@ -57,12 +57,12 @@ window.addEventListener("keydown", function (evt) {
         overlay.classList.remove("overlay-show");
       }
     }
-  });
+});
 
 overlay.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
     overlay.classList.remove("overlay-show");
-  });
+});
 

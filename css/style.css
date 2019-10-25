@@ -1,23 +1,19 @@
 @font-face {
-  font-family: "Gilroy-Extrabold";
-  font-style: normal;
+  font-family: "Gilroy";           
+  src: local("Gilroy"),
+       url("../fonts/Gilroy.woff2") format("woff2"), 
+       url("../fonts/Gilroy.woff") format("woff"); 
   font-weight: 800;
-  src: local("Gilroy-Extrabold"),
-       url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), 
-       url("../fonts/Gilroy-Extrabold.woff") format("woff"),
-       url("../fonts/Gilroy-Extrabold.ttf") format("ttf"),
-       url("../fonts/Gilroy-Extrabold.eot") format("eot");
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Gilroy-Light";
-  font-style: normal;
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+       url("../fonts/Gilroy.woff2") format("woff2"), 
+       url("../fonts/Gilroy.woff") format("woff");
   font-weight: 300;
-  src: local("Gilroy-Light"),
-       url("../fonts/Gilroy-Light.woff2") format("woff2"), 
-       url("../fonts/Gilroy-Light.woff") format("woff"),
-       url("../fonts/Gilroy-Light.ttf") format("ttf"),
-       url("../fonts/Gilroy-Light.eot") format("eot");
+  font-style: normal;
 }
 
 body {
@@ -196,7 +192,7 @@ header {
 }
 
 .main-navigation .main-menu {
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -367,7 +363,7 @@ header {
 
 .main-slider-item .slider-description::after {
 	position: absolute;
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 180px;
   font-weight: 800;
   color: #ffffff;
@@ -388,7 +384,7 @@ header {
 }
 
 .main-slider .action-call {
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 56px;
   font-weight: 800;
@@ -405,7 +401,7 @@ header {
 .slider-description a {
 	position: relative;
 	display:inline-block;
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 800;
@@ -417,7 +413,7 @@ header {
   }
 
 .parameters tr:first-of-type {
-	font-family: "Gilroy-Light", sans-serif;
+	font-family: "Gilroy", sans-serif;
   font-size: 36px;
   line-height: 48px;
   font-weight: 300;
@@ -474,7 +470,7 @@ header {
 }
 
 .popular-items li{
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -589,7 +585,7 @@ li:nth-of-type(6) .popular-item::after {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -677,7 +673,7 @@ li:nth-of-type(6) .popular-item::after {
 }
 
 .services-sliders h3 {
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 800;
@@ -782,7 +778,7 @@ li:nth-of-type(6) .popular-item::after {
 
 .main-info h3 {
 	position: relative;
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 800;
@@ -814,7 +810,7 @@ li:nth-of-type(6) .popular-item::after {
 
 .about-us ul {
 	list-style: none;
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
   font-weight: 800;
@@ -998,7 +994,7 @@ li:nth-of-type(6) .popular-item::after {
 }
 
 .write-us-popup label {
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -1013,7 +1009,7 @@ li:nth-of-type(6) .popular-item::after {
 .send-button {
 	display: block;
 	position: relative;
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 800;
@@ -1070,6 +1066,7 @@ li:nth-of-type(6) .popular-item::after {
 
 .modal-close-btn:hover {
 	opacity: 1;
+	cursor: pointer;
 }
 
 .modal-close-btn:active {
@@ -1178,7 +1175,7 @@ footer .footer-user-block img:active {
 }
 
 .footer-contacts ul {
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -1300,7 +1297,7 @@ footer .footer-user-block img:active {
 }
 
 .page-heading h1 {
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 47px;
   font-weight: 800;
@@ -1468,7 +1465,7 @@ footer .footer-user-block img:active {
 }
 
 .top-bar span {
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
@@ -1489,7 +1486,7 @@ footer .footer-user-block img:active {
 }
 
 .filter-form legend {
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
@@ -1504,7 +1501,7 @@ footer .footer-user-block img:active {
 }
 
 .filter-form .range-fieldset .range-controls label {
-	font-family: "Gilroy-Light", sans-serif;
+	font-family: "Gilroy", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -1650,7 +1647,7 @@ footer .footer-user-block img:active {
 	top: 28px;
 	right: 28px;
 	content: "new";
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 58px;
   font-weight: 800;
@@ -1729,7 +1726,7 @@ footer .footer-user-block img:active {
 
 .item-description h3 {
 	width: 260px;
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 800;
@@ -1737,7 +1734,7 @@ footer .footer-user-block img:active {
 }
 
 .item-description span {
-	font-family: "Gilroy-Light", "Arial", sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -1746,7 +1743,7 @@ footer .footer-user-block img:active {
 }
 
 .pagination {
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 800;

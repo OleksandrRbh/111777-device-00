@@ -14,7 +14,7 @@ closeMap.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.remove("modal-show");
     overlayMap.classList.remove("overlay-show");
-  });
+});
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
@@ -24,13 +24,13 @@ window.addEventListener("keydown", function (evt) {
     	overlayMap.classList.remove("overlay-show");
       }
     }
-  });
+});
 
 overlayMap.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.remove("modal-show");
     overlayMap.classList.remove("overlay-show");
-  });
+});
 
 
 
