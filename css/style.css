@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Gilroy";           
   src: local("Gilroy"),
-       url("../fonts/Gilroy.woff2") format("woff2"), 
-       url("../fonts/Gilroy.woff") format("woff"); 
+       url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), 
+       url("../fonts/Gilroy-Extrabold.woff") format("woff"); 
   font-weight: 800;
   font-style: normal;
 }
@@ -10,8 +10,8 @@
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy"),
-       url("../fonts/Gilroy.woff2") format("woff2"), 
-       url("../fonts/Gilroy.woff") format("woff");
+       url("../fonts/Gilroy-Light.woff2") format("woff2"), 
+       url("../fonts/Gilroy-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -106,7 +106,7 @@ header {
 	width: 250px;
 	border: none;
 	background-color: transparent;
-	background-image: url(../img/search.png);
+	background-image: url("../img/search.png");
 	background-repeat: no-repeat;
 	background-position: 4px 13px;
 }
@@ -158,7 +158,7 @@ header {
 .user-block .sign-in {
 	padding-left: 24px;
 	background-position: left center;
-	background-image: url(../img/user-black.png);
+	background-image: url("../img/user-black.png");
 	background-repeat: no-repeat;
 	flex-grow: 1;
 }
@@ -170,7 +170,7 @@ header {
 .user-block .compare {
 	padding-left: 20px;
 	background-position: left center;
-	background-image: url(../img/compare-black.png);
+	background-image: url("../img/compare-black.png");
 	background-repeat: no-repeat;
 	margin-left: 60px;
 }
@@ -178,7 +178,7 @@ header {
 .user-block .cart {
 	padding-left: 23px;
 	background-position: left center;
-	background-image: url(../img/cart-black.png);
+	background-image: url("../img/cart-black.png");
 	background-repeat: no-repeat;
 	margin-left: 40px;
 }
@@ -192,7 +192,7 @@ header {
 }
 
 .main-navigation .main-menu {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -213,7 +213,7 @@ header {
 .catalog-open-wrapper .categories-popup {
 	position: absolute;
 	left: -60px;
-	font-family: "Open Sans", Arial, sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 400;
@@ -261,7 +261,7 @@ header {
 	content: " ";
 	width: 16px;
 	height: 16px;
-	background-image: url(../img/plus.png);
+	background-image: url("../img/plus.png");
 	background-repeat: no-repeat;
 	top: 4px;
 	right: 0px;
@@ -305,7 +305,7 @@ header {
 }
 
 .main-slider label {
-	background-image: url(../img/slider-button-empty.png); 
+	background-image: url("../img/slider-button-empty.png"); 
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 12px;
@@ -313,13 +313,13 @@ header {
 }
 
 .main-slider .main-slider-switch-1:checked ~ .label-box label:nth-child(1){
-	background-image: url(../img/slider-button.png);
+	background-image: url("../img/slider-button.png");
 }
 .main-slider .main-slider-switch-2:checked ~ .label-box label:nth-child(2){
-	background-image: url(../img/slider-button.png);
+	background-image: url("../img/slider-button.png");
 }
 .main-slider .main-slider-switch-3:checked ~ .label-box label:nth-child(3){
-	background-image: url(../img/slider-button.png);
+	background-image: url("../img/slider-button.png");
 }
 
 .main-slider .main-slider-switch-1:checked ~ .slider-1 {
@@ -363,7 +363,7 @@ header {
 
 .main-slider-item .slider-description::after {
 	position: absolute;
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 180px;
   font-weight: 800;
   color: #ffffff;
@@ -384,7 +384,7 @@ header {
 }
 
 .main-slider .action-call {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
   font-weight: 800;
@@ -401,7 +401,7 @@ header {
 .slider-description a {
 	position: relative;
 	display:inline-block;
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 800;
@@ -470,7 +470,7 @@ header {
 }
 
 .popular-items li{
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -514,32 +514,32 @@ header {
 }
 
 li:nth-of-type(1) .popular-item::after {
-	background-image: url(../img/popular-1.png);
+	background-image: url("../img/popular-1.png");
 	background-position: 50% 50%;
 }
 
 li:nth-of-type(2) .popular-item::after {
-	background-image: url(../img/popular-2.png);
+	background-image: url("../img/popular-2.png");
 	background-position: 50% bottom;
 }
 
 li:nth-of-type(3) .popular-item::after {
-	background-image: url(../img/popular-3.png);
+	background-image: url("../img/popular-3.png");
 	background-position: 50% 50%;
 }
 
 li:nth-of-type(4) .popular-item::after {
-	background-image: url(../img/popular-4.png);
+	background-image: url("../img/popular-4.png");
 	background-position: 50% 50%;
 }
 
 li:nth-of-type(5) .popular-item::after {
-	background-image: url(../img/popular-5.png);
+	background-image: url("../img/popular-5.png");
 	background-position: 50% 50%;
 }
 
 li:nth-of-type(6) .popular-item::after {
-	background-image: url(../img/popular-6.png);
+	background-image: url("../img/popular-6.png");
 	background-position: 50% 50%;
 }
 
@@ -585,7 +585,7 @@ li:nth-of-type(6) .popular-item::after {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -661,19 +661,19 @@ li:nth-of-type(6) .popular-item::after {
 }
 
 .services-slider-1::after {
-	background-image: url(../img/services-delivery.png);
+	background-image: url("../img/services-delivery.png");
 }
 
 .services-slider-2::after {
-	background-image: url(../img/services-warranty.png);
+	background-image: url("../img/services-warranty.png");
 }
 
 .services-slider-3::after {
-	background-image: url(../img/services-credit.png);
+	background-image: url("../img/services-credit.png");
 }
 
 .services-sliders h3 {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 800;
@@ -754,19 +754,19 @@ li:nth-of-type(6) .popular-item::after {
 }
 
 .main-producers li:nth-child(1):hover::before{
-	background-image: url(../img/prodlogo-1color.jpg);
+	background-image: url("../img/prodlogo-1color.jpg");
 }
 
 .main-producers li:nth-child(2):hover::before{
-	background-image: url(../img/prodlogo-2color.jpg);
+	background-image: url("../img/prodlogo-2color.jpg");
 }
 
 .main-producers li:nth-child(3):hover::before{
-	background-image: url(../img/prodlogo-3color.jpg);
+	background-image: url("../img/prodlogo-3color.jpg");
 }
 
 .main-producers li:nth-child(4):hover::before{
-	background-image: url(../img/prodlogo-4color.jpg);
+	background-image: url("../img/prodlogo-4color.jpg");
 }
 
 .main-info {
@@ -778,7 +778,7 @@ li:nth-of-type(6) .popular-item::after {
 
 .main-info h3 {
 	position: relative;
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 800;
@@ -810,7 +810,7 @@ li:nth-of-type(6) .popular-item::after {
 
 .about-us ul {
 	list-style: none;
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 40px;
   font-weight: 800;
@@ -830,7 +830,7 @@ li:nth-of-type(6) .popular-item::after {
 	height: 8px;
 	top: 18px;
 	left: -39px;
-	background-image: url(../img/list-bullit-donut.png);
+	background-image: url("../img/list-bullit-donut.png");
 	z-index: 1;
 }
 
@@ -864,7 +864,7 @@ li:nth-of-type(6) .popular-item::after {
 	width: 960px;
 	height: 559px;
 	background-color: lightgrey;
-	background-image: url(../img/map-big.png);
+	background-image: url("../img/map-big.png");
 	background-repeat: no-repeat;
 	-webkit-box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
 	        box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
@@ -1052,7 +1052,7 @@ li:nth-of-type(6) .popular-item::after {
 }
 
 .write-us-popup label {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -1067,7 +1067,7 @@ li:nth-of-type(6) .popular-item::after {
 .send-button {
 	display: block;
 	position: relative;
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 800;
@@ -1194,15 +1194,15 @@ footer .footer-user-block img:active {
 }
 
 .footer-user-block .sign-in::before{
-	background-image: url(../img/user.png);
+	background-image: url("../img/user.png");
 }
 
 .footer-user-block .compare::before{
-	background-image: url(../img/compare.png);
+	background-image: url("../img/compare.png");
 }
 
 .footer-user-block .cart::before{
-	background-image: url(../img/cart.png);
+	background-image: url("../img/cart.png");
 }
 
 .footer-user-block .user-link:hover::before{
@@ -1233,7 +1233,7 @@ footer .footer-user-block img:active {
 }
 
 .footer-contacts ul {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -1302,15 +1302,15 @@ footer .footer-user-block img:active {
 }
 
 .social-link.fb {
-	background-image: url(../img/social-fb.png);
+	background-image: url("../img/social-fb.png");
 }
 
 .social-link.inst {
-	background-image: url(../img/social-inst.png);
+	background-image: url("../img/social-inst.png");
 }
 
 .social-link.twit {
-	background-image: url(../img/social-twit.png);
+	background-image: url("../img/social-twit.png");
 }
 
 .social-link:hover {
@@ -1323,7 +1323,7 @@ footer .footer-user-block img:active {
 
 .developed-by {
 	display: inline-block;
-	background-image: url(../img/logo-html-yellow.svg);
+	background-image: url("../img/logo-html-yellow.svg");
 	background-repeat: no-repeat;
 	width: 27px;
 	height: 35px;
@@ -1355,7 +1355,7 @@ footer .footer-user-block img:active {
 }
 
 .page-heading h1 {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 47px;
   font-weight: 800;
@@ -1381,7 +1381,7 @@ footer .footer-user-block img:active {
 	content: " ";
 	top: 13px;
 	right: 17px;
-	background-image: url(../img/nav-arrow.png);
+	background-image: url("../img/nav-arrow.png");
 	width: 4px;
 	height: 7px;
 }
@@ -1490,11 +1490,11 @@ footer .footer-user-block img:active {
 }
 
 .direction-sort .direction-up::before {
-	background-image: url(../img/icon-up-dir.png);
+	background-image: url("../img/icon-up-dir.png");
 }
 
 .direction-sort .direction-down::before {
-	background-image: url(../img/icon-down-dir.png);
+	background-image: url("../img/icon-down-dir.png");
 }
 
 .catalog-main-block {
@@ -1523,7 +1523,7 @@ footer .footer-user-block img:active {
 }
 
 .top-bar span {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
@@ -1545,7 +1545,7 @@ footer .footer-user-block img:active {
 }
 
 .filter-form h3 {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
@@ -1643,14 +1643,14 @@ footer .footer-user-block img:active {
 	content: " ";
 	top: -2px;
 	left: 1px;
-	background-image: url(../img/checkbox-off-black.png);
+	background-image: url("../img/checkbox-off-black.png");
 	background-repeat: no-repeat;
 	width: 23px;
 	height: 23px;
 }
 
 .filter-form .checkbox-fieldset input:checked+label::before{
-	background-image: url(../img/checkbox-on-black.png);
+	background-image: url("../img/checkbox-on-black.png");
 }
 
 .filter-form .radio-fieldset label::before{
@@ -1658,14 +1658,14 @@ footer .footer-user-block img:active {
 	content: " ";
 	top: -2px;
 	left: 0px;
-	background-image: url(../img/radio-off-black.png);
+	background-image: url("../img/radio-off-black.png");
 	background-repeat: no-repeat;
 	width: 25px;
 	height: 25px;
 }
 
 .filter-form .radio-fieldset input:checked+label::before{
-	background-image: url(../img/radio-on-black.png);
+	background-image: url("../img/radio-on-black.png");
 }
 
 .filter-form .fieldset li:hover>label::before {
@@ -1707,7 +1707,7 @@ footer .footer-user-block img:active {
 	top: 28px;
 	right: 28px;
 	content: "new";
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 58px;
   font-weight: 800;
@@ -1786,7 +1786,7 @@ footer .footer-user-block img:active {
 
 .item-description h3 {
 	width: 260px;
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 800;
@@ -1794,7 +1794,7 @@ footer .footer-user-block img:active {
 }
 
 .item-description span {
-	font-family: "Gilroy", "Arial", sans-serif;
+	font-family: "Gilroy", ""Arial"", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -1803,7 +1803,7 @@ footer .footer-user-block img:active {
 }
 
 .pagination {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 800;
