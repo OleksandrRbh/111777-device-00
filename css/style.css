@@ -866,9 +866,14 @@ li:nth-of-type(6) .popular-item::after {
 	background-color: lightgrey;
 	background-image: url(../img/map-big.png);
 	background-repeat: no-repeat;
-	box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+	        box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
 	z-index: 10;
 	display: none;
+	-webkit-animation-name: scale;
+	        animation-name: scale;
+	-webkit-animation-duration: 0.4s;
+	        animation-duration: 0.4s;
 }
 
 
@@ -880,11 +885,14 @@ li:nth-of-type(6) .popular-item::after {
 	background-color: #ffffff;
 	width: 960px;
 	min-height: 553px;
-	box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+	        box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
 	z-index: 10;
 	display: none;
-	animation-name: scale;
-	animation-duration: 0.4s;
+	-webkit-animation-name: scale;
+	        animation-name: scale;
+	-webkit-animation-duration: 0.4s;
+	        animation-duration: 0.4s;
 }
 
 .modal-show {
@@ -892,8 +900,10 @@ li:nth-of-type(6) .popular-item::after {
 }
 
 .modal-error {
-  animation-name: shake;
-	animation-duration: 0.6s;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+	-webkit-animation-duration: 0.6s;
+	        animation-duration: 0.6s;
 }
 
 .overlay-show {
@@ -908,24 +918,45 @@ li:nth-of-type(6) .popular-item::after {
 	z-index: 8;
 }
 
-@keyframes scale {
+@-webkit-keyframes scale {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 
   70% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
-@keyframes shake {
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  70% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -933,14 +964,41 @@ li:nth-of-type(6) .popular-item::after {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
