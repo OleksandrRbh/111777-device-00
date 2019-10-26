@@ -206,6 +206,10 @@ header {
   justify-content: space-between;	
 }
 
+.main-menu > li > a {
+	letter-spacing: 4px;
+}
+
 .catalog-open-wrapper {
 	position: relative;
 }
@@ -258,7 +262,7 @@ header {
 
 .catalog-open::after {
 	position: absolute;
-	content: " ";
+	content: "";
 	width: 16px;
 	height: 16px;
 	background-image: url("../img/plus.png");
@@ -277,6 +281,7 @@ header {
 .main-slider {
 	position: relative;
 	min-height: 481px;
+	margin-bottom: 100px;
 }
 
 .main-slider .main-slider-item {
@@ -337,6 +342,7 @@ header {
 	display: flex;
 	justify-content: center;
 	box-sizing: border-box;
+	margin-top: 41px;
 }
 
 .slider-description {
@@ -407,7 +413,7 @@ header {
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   margin-bottom: 45px;
   align-self: flex-start;
   }
@@ -440,10 +446,8 @@ header {
 
 .slider-description a::before{
 	position: absolute;
-	content:" ";
-	top: 16px;
-	z-index: -1;
-	
+	content:"";
+	z-index: -1;	
 	height: 8px;
 	background-color: #f0c52e;
 }
@@ -457,7 +461,7 @@ header {
 }
 
 .main-popular {
-	margin-bottom: 180px;
+	margin-bottom: 181px;
 }
 
 .popular-items {
@@ -506,7 +510,7 @@ header {
 	left: 0;
 	margin: 0;
 	padding: 0;
-	content:" ";
+	content:"";
 	width: 160px;
 	height: 160px;
 	background-color: transparent;
@@ -576,7 +580,7 @@ li:nth-of-type(6) .popular-item::after {
 
 .services-switch-box{
 	width: 280px;
-	height: 260px;
+	height: 240px;
 	border-right: 7px solid #000000;
 	padding-top:80px; 
 }
@@ -606,7 +610,7 @@ li:nth-of-type(6) .popular-item::after {
 
 .services-switch-box label::before {
 	position: absolute;
-	content: " ";
+	content: "";
 	background-color: #f0c52e;
 	top: 18px;
 	left: 0px;
@@ -731,7 +735,8 @@ li:nth-of-type(6) .popular-item::after {
 
 .main-producers ul {
 	list-style: none;
-	padding: 0;
+	margin: 0;
+  padding: 2px;
 	height: 287px;
 	display: flex;
 	flex-direction: row;
@@ -745,7 +750,7 @@ li:nth-of-type(6) .popular-item::after {
 
 .main-producers li:hover::before{
 	position: absolute;
-	content: " ";
+	content: "";
 	top: 0px;
 	left: 0px;
 	width: 260px;
@@ -778,6 +783,7 @@ li:nth-of-type(6) .popular-item::after {
 
 .main-info h3 {
 	position: relative;
+	margin-bottom: 20px;
 	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -799,7 +805,7 @@ li:nth-of-type(6) .popular-item::after {
 
 .main-info h3::before {
 	position: absolute;
-	content: " ";
+	content: "";
 	top: -50px;
 	left: 0px;
 	width: 80px;
@@ -825,7 +831,7 @@ li:nth-of-type(6) .popular-item::after {
 
 .about-us li::before {
 	position: absolute;
-	content: " ";
+	content: "";
 	width: 8px;
 	height: 8px;
 	top: 18px;
@@ -1064,7 +1070,7 @@ li:nth-of-type(6) .popular-item::after {
 	width: 190px;
 }
 
-.send-button {
+.site-button {
 	display: block;
 	position: relative;
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -1085,31 +1091,31 @@ li:nth-of-type(6) .popular-item::after {
   align-self: flex-start;
 }
 
-.send-button::before {
+.site-button::before {
 	position: absolute;
 	content: "";
 	background-color: #f0c52e;
 	width: 100%;
 	height: 8px;
-	top: 15px;
-	left: 0px;
-	transition: all(3s);
-	-webkit-transition: all 0.3s;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	left: 0;
+	transition: height 0.3s;
+	-webkit-transition: height 0.3s;
 	z-index: -1;
 }
 
-.send-button span {
+.site-button span {
 	position: relative;
 	z-index: 2;
 }
 
-.send-button:hover.send-button::before {
-	height: 40px;
-	top: 0px;
-	
+.site-button:hover.site-button::before {
+	height: 40px;	
 }
 
-.send-button:active {
+.site-button:active {
 	color: #a88a20;
 }
 
@@ -1184,7 +1190,7 @@ footer .footer-user-block img:active {
 
 .footer-user-block .user-link::before{
 	position: absolute;
-	content: " ";
+	content: "";
 	width: 13px;
 	height: 12px;
 	top: 4px;
@@ -1284,7 +1290,7 @@ footer .footer-user-block img:active {
 }
 
 .footer-social::before {
-	content: " ";
+	content: "";
 	width: 80px;
 	height: 7px;
 	top: auto;
@@ -1378,7 +1384,7 @@ footer .footer-user-block img:active {
 
 .breadcrumbs li:not(:last-of-type)::after {
 	position: absolute;
-	content: " ";
+	content: "";
 	top: 13px;
 	right: 17px;
 	background-image: url("../img/nav-arrow.png");
@@ -1388,6 +1394,7 @@ footer .footer-user-block img:active {
 
 .breadcrumbs a {
 	opacity: 0.3;
+	color: #000000;
 }
 
 .breadcrumbs a:hover {
@@ -1442,6 +1449,7 @@ footer .footer-user-block img:active {
 
 .top-sort label{
 	opacity: 0.3;
+	cursor: pointer;
 }
 
 .top-sort label:hover{
@@ -1640,7 +1648,7 @@ footer .footer-user-block img:active {
 
 .filter-form .checkbox-fieldset label::before{
 	position: absolute;
-	content: " ";
+	content: "";
 	top: -2px;
 	left: 1px;
 	background-image: url("../img/checkbox-off-black.png");
@@ -1734,7 +1742,7 @@ footer .footer-user-block img:active {
 
 .item-container::before{
 	position: absolute;
-	content: " ";
+	content: "";
 	top: 0px;
 	left: 0px;
 	width: 360px;
