@@ -16,7 +16,7 @@
             <img class="index-logo" src="img/index-logo.svg" width="163" height="35" alt="Логотип магазина Device">
           </a>
           <div class="user-block">
-            <form class="goods-search" action="" method="get">
+            <form class="goods-search" action="https://echo.oleksandrrbh.github.io/111777-device-00" method="get">
               <label for="search" class="visually-hidden">Поиск по сайту</label>
               <input type="text" name="search" id="search" placeholder="Поиск по сайту">
               <button type="button">Найти</button>  
@@ -32,6 +32,7 @@
             <li class="catalog-open-wrapper">
               <a href="catalog.html" class="catalog-open">Каталог товаров</a>
               <section class="categories-popup">
+                <h3 class="visually-hidden">Категории товаров</h3>
                 <ul>
                   <li><a href="">Виртуальная реальность</a></li>
                   <li><a href="">Моноподы для селфи</a></li>
@@ -99,10 +100,11 @@
         </div>
       </div>
       <div class="catalog-main-block container">
-        <section class="filter-section">    			
-    			<form method="get" action="" class="filter-form">
+        <section class="filter-section">
+        <h2 class="visually-hidden">Фильтр товаров</h2>    			
+    			<form method="get" action="https://echo.oleksandrrbh.github.io/111777-device-00" class="filter-form">
             <div class="fieldset range-fieldset">
-    				  <legend>Стоимость</legend>
+    				  <h3>Стоимость</h3>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -116,7 +118,7 @@
               </div>
             </div>
             <div class="fieldset checkbox-fieldset">
-              <legend>Цвет</legend>
+              <h3>Цвет</h3>
               <ul>
                 <li>
         					<input type="checkbox" name="color-black" id="color-black-id" checked>
@@ -141,7 +143,7 @@
               </ul>
             </div> 
             <div class="fieldset radio-fieldset">
-            <legend>Bluetooth</legend>
+            <h3>Bluetooth</h3>
               <ul>    
                 <li>
         					<input type="radio" name="bluetooth-switch" id="radio-yes-id" checked>
@@ -157,6 +159,7 @@
     			</form>	
     		</section>
     		<section class="goods-gallery">
+          <h2 class="visually-hidden">Галерея товаров</h2>
     			<span class="visually-hidden">Список товаров</span>
     			<ul class="goods-list">
     				<li>

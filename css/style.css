@@ -1483,14 +1483,16 @@ footer .footer-user-block img:active {
 	width: 200px;
 	border-top: 2px solid #000000; 
 	padding-top: 12px;
+	padding-bottom: 20px;
 }
 
-.filter-form legend {
+.filter-form h3 {
 	font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
   color: #000000;
+  margin-top: 0px;
   margin-bottom: 25px;
 }
 
